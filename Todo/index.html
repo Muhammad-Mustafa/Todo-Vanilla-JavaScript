@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Todo App</title>
+
+  <script type="text/javascript" src="main.js"></script>
+
 </head>
 <body>
-    <h1>Hello World</h1>
+  <div class="main">
+  <h1>
+  Todo App
+  </h1>
+   
+   <input type="text" id="todo" class="addBtn" placeholder="Enter todo item">
+   
+   <button onClick="addTodo()" class="addBtn" >Add</button>  
+   <button onClick="deleteTodo()" class="addBtn">Delete</button>  
+   
+   <br> <br>
+   <input type="text" id="updateTodo" class="addBtn" placeholder="Enter updated todo item">
+   <button onClick="updateTodo()" class="addBtn">Update</button>  
+
+
+  </div>
+  
+     <p id="todoList"></p>
+
+  
 </body>
 </html>
